@@ -1,0 +1,77 @@
+.allphoto {
+    width: 100%;
+    margin-top: 10px;
+}
+
+article,
+.article2 {
+    background-color: rgb(186, 213, 186, 55%);
+    width: 97%;
+    margin: 10px auto 20px auto;
+    flex-direction: row;
+    display: flex;
+    padding: 15px 5px 10px 5px;
+}
+
+.article2 {
+    flex-direction: column;
+}
+
+.gallery {
+    width: 49%;
+    margin-right: 2%;
+}
+
+.text {
+    width: 49%;
+    font-size: 30px;
+    color: rgb(45, 76, 45);
+    font-family: "Calibri";
+}
+
+.divsinarticle2 {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.secondbr {
+    @media(max-width:1024px) and (min-width:900px) {
+        display: none;
+    }
+}
+
+@media(min-width:1024px) {
+    .gallery {
+        width: 39%
+    }
+    .text {
+        width: 60%;
+    }
+}
+
+@media(max-width:900px) and (min-width:601px) {
+    .text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    article {
+        flex-direction: column;
+    }
+    .gallery {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+    .text {
+        width: 100%;
+        font-size: 20px
+    }
+    .divsinarticle2 {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,213 @@
+$greenbl: rgb(72, 104, 72);
+$green: rgb(186, 213, 186, 55%);
+$textgreen: rgb(45, 76, 45);
+
+@mixin text {
+    font-family: "Calibri";
+    color: $textgreen;
+}
+
+
+.mainfoto {
+    width: 85%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width:768px) {
+        width: 100%;
+    }
+}
+
+.info-main {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: $green;
+
+    @media(max-width:480px) {
+        flex-direction: column;
+    }
+}
+
+.fotoinfo-main {
+    width: 40%;
+    height: min-content;
+
+    @media(max-width:850px) and (min-width:480px) {
+        width: 55%;
+        float: left;
+        margin-right: 5px;
+    }
+
+    @media(max-width:480px) {
+        width: 100%;
+    }
+}
+
+.aboutpark {
+    font-size: 20px;
+    @include text;
+    margin: 10px 0px 10px 0px;
+
+    @media(min-width:850px) {
+        width: 60%;
+        height: 100%;
+        float: left;
+        font-size: 18px;
+    }
+
+    @media (max-width:1023px) and (min-width:768px) {
+        font-size: 16px;
+    }
+
+    
+
+}
+
+.podrobnee {
+    margin-top: 5px;
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    background: $greenbl;
+    border-radius: 15px;
+    font-size: 22px;
+    width: 200px;
+
+    height: min-content;
+    margin-left: 67%;
+    cursor: pointer;
+
+}
+
+.maimnobutton {
+    width: 100%;
+}
+
+.prozhivanie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.hreftoliving {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    background-color: $green;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.prozhivdiv {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.prozhivfoto {
+    width: 95%;
+    height: fit-content;
+    margin: 0px auto 0px auto;
+}
+
+.prozhivtext {
+    font-size: 19px;
+    @include text;
+    margin: 0px 0px 10px 0px;
+}
+
+
+.restoranfoto {
+    width: 50%;
+    height: fit-content;
+    margin: auto 10px auto 10px;
+}
+
+.restoran {
+    display: flex;
+    background-color: $green;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 25px;
+    ;
+}
+
+.aboutrest {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.text-rest {
+    font-size: 19px;
+    @include text;
+    margin: auto;
+}
+
+
+@media (min-width:861px) {
+    a.hreftoliving:hover {
+        width: 50%
+    }
+}
+
+@media (max-width:860px) and (min-width:601px) {
+    .hreftoliving {
+        width: 45%
+    }
+
+    .prozhivdiv {
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
+    .prozhivfoto {
+        width: 95%;
+    }
+
+    .hreftoliving:hover {
+        width: 47%
+    }
+}
+
+@media (max-width:600px) {
+    .prozhivanie {
+        flex-direction: column;
+        align-items: space-evenly;
+    }
+
+    .hreftoliving {
+        width: 90%;
+        padding: 10px;
+        margin: 0px auto 15px auto;
+    }
+
+    .prozhivfoto {
+        width: 95%;
+        float: right;
+        margin-top: 10px;
+    }
+
+    .hreftoliving:hover {
+        width: 95%
+    }
+
+    .aboutrest {
+        flex-direction: column;
+        margin: 0px auto 5px auto;
+    }
+
+    .restoranfoto {
+        width: 100%
+    }
+
+    .podrobnee {
+        margin-left: 35%;
+    }
+}

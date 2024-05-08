@@ -1,0 +1,108 @@
+.titleforform{
+    background:rgb(72, 104, 72) ;
+    font-size: 28px;
+    color:#fff;
+    padding: 10px;
+    margin-top: 15px;
+}
+form{
+    border:2px solid rgb(72, 104, 72);
+    padding:15px;
+}
+input,select{
+    height:50px;
+    width:30%;
+    border-radius: 12px;
+    border:1px solid rgb(72, 104, 72);
+    Color: rgb(72, 104, 72);
+    font-size: 20px;
+}
+input::placeholder{
+    color:rgb(186, 213, 186);
+    font-size: 20px;
+}
+.divsinform{
+    margin-bottom: 15px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+#rooms{width:95%;
+    font-family: "Calibri";}
+
+#kol-voguests{width:70%}
+
+label{ font-size: 20px;
+    display: flex;
+    color:rgb(45,76,45);
+    font-family: "Calibri";}
+
+input[type="date"]{ width:95%}
+
+.divforlabel{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width:600px){
+    .divsinform{flex-direction: column;}
+    input{width:95%;
+    margin-bottom: 10px;}
+    .divforlabel{width:100%;}
+}
+.broninform{ width:100%;
+    align-self: center;
+    border: none;
+    justify-content:center;
+    color: #fff;
+    padding: 15px 0px 15px 0px;
+    background:rgb(72, 104, 72);
+    border-radius: 15px;
+    font-size: 30px;
+    cursor: pointer;}
+
+.rooms{ background-color:rgb(186, 213, 186,55%);
+    width:97%;
+    margin:10px auto 20px auto;
+    flex-direction: column;
+    display: flex;
+    padding: 15px 5px 10px 5px;}
+.nomer{
+    border-bottom: 2px solid rgb(72, 104, 72);
+    margin:0px auto 10px auto;
+    display: flex;
+    flex-direction: row;
+    width:95%;
+    justify-content: space-between;
+}
+.fortext{
+    width:47%;
+}
+.aboutnomer{
+font-size: 24px;
+color:rgb(45,76,45);
+font-weight: 200;
+font-family: "Calibri";
+}
+.price{
+font-size: 24px;
+font-weight: bold;
+color:rgb(45,76,45);
+font-family: "Calibri";
+
+}
+.fotonomera{
+    width:50%;
+    margin: 5px 0px 15px 0px;
+    height: fit-content;
+}
+h3{font-weight: 200;}
+@media(max-width:1024px) and (min-width:850px){
+    .fotonomera{width:60%}
+    .fortext{width:37%}
+}
+@media(max-width:849px){
+    .nomer{flex-direction: column;}
+    .fotonomera{width:100%}
+    .fortext{width:100%}
+}

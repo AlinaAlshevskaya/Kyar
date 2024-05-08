@@ -1,0 +1,566 @@
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+.logo {
+    width: 180px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.adress {
+    font-size: 18px;
+    text-align: right;
+    width: 33%;
+    color: rgb(45, 76, 45);
+    font-family: "Calibri";
+}
+
+.map {
+    width: 60px;
+    height: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @media (max-width: 890px) {
+        display: none;
+    }
+
+    ;
+}
+
+.number {
+    display: flex;
+    font-size: 32px;
+    font-weight: 500;
+    justify-content: center;
+    color: rgb(45, 76, 45);
+    margin: 20px auto 0px auto;
+    font-family: "Calibri";
+}
+
+div.top {
+    display: flex;
+}
+
+.inf {
+    width: 90%;
+    display: flex;
+    background-color: rgb(186, 213, 186, 55%);
+}
+
+.infinside {
+    display: flex;
+    width: 68%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bron {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-size: 22px;
+    color: #fff;
+    background: rgb(72, 104, 72);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.abron {
+    width: 32%;
+    align-self: center;
+}
+
+.bigbron {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    align-self: center;
+    float: center;
+    justify-content: center;
+    color: #fff;
+    padding: 15px 0px 15px 0px;
+    background: rgb(72, 104, 72);
+    border-radius: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button img {
+    width: 100%;
+}
+
+.headerforphone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: space-around;
+}
+
+.iconinst,
+.icontel,
+.iconviber,
+.iconvk {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.navfordesk {
+    display: flex;
+    border: 4px solid rgb(72, 104, 72);
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.navdiv {
+    display: flex;
+    flex-flow: row;
+    height: 70px;
+    width: 100%;
+    border: 1px solid rgb(72, 104, 72);
+    justify-content: space-evenly;
+}
+
+.navdiv:hover {
+    background-color: rgb(72, 104, 72);
+    color: #fff;
+
+    span {
+        color: #fff;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .naviconwh {
+        display: block;
+    }
+}
+
+.spaninnav {
+    color: rgb(45, 76, 45);
+    font-size: 22px;
+    margin-top: 25px;
+    font-family: "Calibri";
+    font-weight: 500;
+}
+
+.navicon {
+    width: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.naviconwh {
+    display: none;
+}
+
+.here {
+    background-color: rgb(72, 104, 72);
+    display: flex;
+    flex-flow: row;
+    height: 70px;
+    width: 100%;
+    border: 1px solid rgb(72, 104, 72);
+    justify-content: space-evenly;
+
+    .spaninnav {
+        color: #fff;
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    .naviconwh {
+        display: flex;
+        width: 50px;
+    }
+}
+
+.hrefinnavdesk {
+    width: 20%;
+    text-decoration: none;
+}
+
+
+
+.menu-button,
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width:1024px) and (min-width:768px) {
+    .spaninnav {
+        font-size: 16px;
+    }
+
+    .iconinst,
+    .icontel,
+    .iconviber,
+    .iconvk {
+        width: 55px;
+    }
+}
+
+@media(max-width:768px) and (min-width:480px) {
+    .headerforphone {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    ;
+
+    .number {
+        margin: auto;
+        font-size: 20px;
+    }
+
+    ;
+
+    .icons {
+        margin: 5px;
+    }
+
+    ;
+
+    .adress {
+        width: 100%
+    }
+
+    ;
+
+    .logo {
+        width: 130px;
+    }
+
+    ;
+}
+
+
+@media(max-width:768px) {
+    .menu-button {
+        display: block;
+
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        background-color: rgb(72, 104, 72);
+        background-image: url(иконки/menu-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-flow: column wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: rgb(186, 213, 186, 65%);
+        overflow-x: hidden;
+        transition: 0.3s ease-in-out;
+        padding: 0;
+        text-align: left;
+        transform: translateY(-100%);
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 15%;
+    }
+
+    .mobile-menu ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 100%;
+        color: rgb(45, 76, 45);
+        background-color: rgb(255, 255, 255, 55%);
+        list-style-type: none;
+        height: 30px;
+        border: 1px solid rgb(45, 76, 45);
+        margin-bottom: 5%;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul li:hover {
+        color: white;
+        background-color: rgb(72, 104, 72);
+    }
+
+    .open {
+        /* display: block; */
+        transform: translateY(0);
+    }
+
+    .menu-button:hover {
+        border: 1px solid rgb(45, 76, 45);
+    }
+
+    .mobile-menu .close-menu {
+        display: block;
+        /* flex: 1 1 100%; */
+        height: 40px;
+        width: 40px;
+        background-image: url("иконки/close-svgrepo-com.svg");
+        background-repeat: no-repeat;
+        background-color: rgb(72, 104, 72);
+        border: none;
+        background-size: 100%;
+        cursor: pointer;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .mobile-menu .close-menu:hover {
+        border: 1px solid rgb(45, 76, 45);
+    }
+
+    .bron,
+    .abron,
+    .navfordesk,
+    .iconvk {
+        display: none;
+    }
+
+    .adress {
+        width: 100%;
+    }
+
+    .infinside {
+        flex-direction: column;
+        width: 73%;
+    }
+
+    .number {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 769px) {
+    .bigbron {
+        display: none;
+    }
+
+    .adress {
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .adress {
+        display: none;
+    }
+
+    .number {
+        font-size: 22px;
+        margin: auto;
+    }
+
+    .iconinst,
+    .icontel,
+    .iconviber,
+    .iconvk {
+        width: 55px;
+    }
+
+    .logo {
+        width: 120px
+    }
+
+    ;
+
+
+}
+
+
+@media (max-width:600px) and (min-width:480px) {
+
+    .iconinst,
+    .icontel,
+    .iconviber,
+    .iconvk {
+        width: 50px;
+    }
+
+    .adress {
+        font-size: 13px;
+    }
+
+    .menu-button {
+        width: 75px;
+        height: 75px;
+    }
+
+    .infinside {
+        width: 77%;
+    }
+}
+
+
+
+
+h1 {
+    font-family: monospace;
+    font-weight: 50;
+    font-size: 60px;
+    margin: 0px;
+    color: rgb(45, 76, 45);
+}
+
+h2 {
+    font-family: monospace;
+    font-weight: 50;
+    font-size: 40px;
+    margin: 0px;
+    color: rgb(45, 76, 45);
+    text-align: center;
+}
+
+h3 {
+    font-family: monospace;
+    font-weight: 50;
+    font-size: 36px;
+    margin: 0px;
+    color: rgb(45, 76, 45);
+    height: fit-content;
+
+}
+
+.smallinf {
+    font-size: 24px;
+    color: rgb(45, 76, 45);
+    margin: 0px 0px 10px 0px;
+    font-family:"Calibri";
+}
+
+
+
+
+
+
+footer {
+    background-color: rgb(72, 104, 72);
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.eachiconinfooter {
+    width: 70px;
+    margin: auto;
+    cursor: pointer;
+
+}
+
+.numbers {
+    font-size: 28px;
+    color: #fff;
+    margin: auto;
+    font-family: "Calibri";
+}
+
+.numbersiconsf {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.iconsf {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.adresforphone {
+    font-size: 14px;
+    color: #fff;
+    display: none;
+}
+
+.tegs {
+    color: #fff;
+    width: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Calibri";
+
+}
+
+u {
+    line-height: 2;
+}
+
+@media(max-width:860px) and (min-width:510px) {
+    .iconsf {
+        width: 60%;
+        flex-wrap: wrap;
+        margin: auto;
+        align-content: space-evenly;
+    }
+}
+
+@media(max-width:510px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .numbersiconsf {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 10px;
+        ;
+    }
+
+    .adresforphone {
+        display: flex;
+    }
+
+    .numbers {
+        width: 60%;
+        font-size: 23px;
+    }
+
+    .iconsf {
+        width: 40%;
+        flex-wrap: wrap;
+    }
+
+    .eachiconinfooter {
+        width: 50px
+    }
+
+    .tegs {
+        width: 100%;
+    }
+
+}
